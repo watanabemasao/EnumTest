@@ -2,37 +2,36 @@ package main.java.product;
 
 import org.jetbrains.annotations.Nullable;
 
-import static main.java.product.EnumProduct.*;
-
+import static main.java.product.EnumFood.*;
+import static main.java.product.EnumDrink.*;
 public class Product {
-    drink drinkFind = drink.Cola;
-    food foodFind = food.potato;
+    Drink drinkFind = Drink.COLA;
+    Food foodFind = Food.POTATO;
 
-    private @Nullable drink drink() {
+    private @Nullable EnumDrink.Drink drink() {
         switch (drinkFind) {
-            case Cola -> System.out.println("コーラ");
-            case GrapefruitJuice -> System.out.println("グレープフルーツジュース" );
-            case OrangeJuice -> System.out.println("オレンジジュース");
+            case COLA -> System.out.println("コーラ");
+            case ORANGE_JUICE -> System.out.println("グレープフルーツジュース" );
+            case GRAPEFRUIT_JUICE -> System.out.println("オレンジジュース");
         }
         return null;
     }
-    public drink getDrinkFind() {
+    public Drink getDrinkFind() {
         return this.drink();
     }
 
 
-    private @Nullable food food() {
+    private @Nullable EnumFood.Food food() {
             switch (foodFind) {
-                case potato -> System.out.println("ポテト");
-                case hotDog -> System.out.println("ホットドッグ");
-                case sandwich -> System.out.println("サンドイッチ");
+                case POTATO -> System.out.println("ポテト");
+                case HOT_DOG -> System.out.println("ホットドッグ");
+                case SANDWICH -> System.out.println("サンドイッチ");
             }
             return null;
         }
 
-    public food getFoodFind() {
+    public Food getFoodFind() {
         return this.food();
     }
-
 
 }

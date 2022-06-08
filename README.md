@@ -15,7 +15,7 @@ drink,foodの2種類のenumの作成。
 それぞれのアクセスの範囲をパッケージ内に設定し、パッケージ外からの使用を制限。  
 
 #### Product  
-**import static main.java.product.EnumProduct.;**  
+**import static main.java.product.EnumFood.;**  
 にて使用するEnumをインポート(複数回使用するコーディング記述省略の為)  
 
 drink型で指定された変数drinkFindにdrink型の定数Colaを代入  
