@@ -16,6 +16,8 @@ drink,foodの2種類のenumの作成。
 
 #### Product  
 **import static main.java.product.EnumFood.;**  
+**import static main.java.product.EnumDrink.;**  
+
 にて使用するEnumをインポート(複数回使用するコーディング記述省略の為)  
 
 drink型で指定された変数drinkFindにdrink型の定数Colaを代入  
@@ -27,4 +29,7 @@ getterにて取得。
 ## Main
 インスタンスを生成し、呼び出し。
 
+## 修正  
+enum内にfood,drinkを作っていたが分ける。  
+UPPER_SNAKE_CASEに変更。
 
