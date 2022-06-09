@@ -1,5 +1,5 @@
 package main.java.product;
 
-enum FoodEnum {
+enum Food {
     POTATO, HOT_DOG, SANDWICH,
 }

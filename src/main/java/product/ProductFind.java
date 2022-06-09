@@ -1,8 +1,8 @@
 package main.java.product;
 
 public class ProductFind {
-    DrinkEnum drinkFind = DrinkEnum.COLA;
-    FoodEnum foodFind = FoodEnum.POTATO;
+    Drink drinkFind = Drink.COLA;
+    Food foodFind = Food.POTATO;
 
     public void drinkFind() {
         switch (drinkFind) {

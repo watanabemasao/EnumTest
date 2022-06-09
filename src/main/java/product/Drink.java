@@ -1,6 +1,6 @@
 package main.java.product;
 
-enum DrinkEnum {
+enum Drink {
     COLA, ORANGE_JUICE, GRAPEFRUIT_JUICE,
 }
 
