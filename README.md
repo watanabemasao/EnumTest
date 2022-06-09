@@ -9,22 +9,25 @@ Mainクラスにて呼び出し。
 
 ## package  
 ### product  
-#### EnumProduct  
+#### ~~EnumProduct~~  
+#### FoodEnum,DrinkEnum
 product内で使用する定数の設定。  
 drink,foodの2種類のenumの作成。  
-それぞれのアクセスの範囲をパッケージ内に設定し、パッケージ外からの使用を制限。  
+~~それぞれのアクセスの範囲をパッケージ内に設定し、パッケージ外からの使用を制限。~~
 
 #### Product  
-**import static main.java.product.EnumFood.;**  
-**import static main.java.product.EnumDrink.;**  
+~~**import static main.java.product.EnumFood.;**~~  
+~~**import static main.java.product.EnumDrink.;**~~  
 
-にて使用するEnumをインポート(複数回使用するコーディング記述省略の為)  
+~~にて使用するEnumをインポート(複数回使用するコーディング記述省略の為)~~  
 
-drink型で指定された変数drinkFindにdrink型の定数Colaを代入  
+~~drink型で指定された変数drinkFindにdrink型の定数Colaを代入~~  
 
-privateで制限されたswitch文の引数にdrinkFindを指定し、定数の条件に合ったメソッドを呼び出し。  
+DrinkEnumより定数COLAを呼び出しdrinkFindに代入  
 
-getterにて取得。
+~~privateで制限された~~switch文の引数にdrinkFindを指定し、定数の条件に合ったメソッドを呼び出し。  
+
+~~getterにて取得。~~
 
 ## Main
 インスタンスを生成し、呼び出し。
@@ -32,4 +35,7 @@ getterにて取得。
 ## 修正  
 enum内にfood,drinkを作っていたが分ける。  
 UPPER_SNAKE_CASEに変更。
+メソッド名、クラス名の各種の見直し。
+各種フォーマットの修正。
+privateではなくpublicでのメソッドの修正。
 
